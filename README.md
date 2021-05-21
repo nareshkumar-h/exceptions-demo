@@ -148,3 +148,39 @@ public class TestDivision {
 }
 
 ```
+
+
+##### Validation
+
+```java
+package in.naresh;
+
+public class GradeValidator {
+
+	public static void validate(int totalMarks, int noOfSubjects) {
+		
+		if(noOfSubjects <=0) {
+			throw new IllegalArgumentException("Invalid no of subjects");
+		}
+	}
+}
+```
+
+```java
+package in.naresh;
+
+public class GradeValidator {
+
+	public static void validate(int totalMarks, int noOfSubjects) throws Exception {
+		
+		if(noOfSubjects <=0) {
+			throw new Exception("Invalid no of subjects");
+		}
+	}
+}
+
+```
+<img width="551" alt="validation_exception" src="https://user-images.githubusercontent.com/2763774/119129240-486c2c00-ba54-11eb-9a31-1a00f88867db.png">
+
+```
+```
