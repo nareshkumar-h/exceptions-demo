@@ -124,11 +124,12 @@ public class TestDivision {
 		
 		
 		int percentage = 0;
+		
+		int totalMarks  = 10;
+		int noOfSubjects = 0;
 		try {
-			int totalMarks  = 10;
-			int noOfSubjects = 0;
 			
-			percentage = totalMarks/noOfSubjects;
+			percentage = totalMarks/noOfSubjects; // Possibility of Exception
 			System.out.println(percentage);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
