@@ -19,7 +19,7 @@ public class TestRuntimeException {
 }
 ```
 
-##### Invalid Input .. Exception will get raised
+#####  Exception 1: RuntimeException Category = >Invalid Input .. Exception will get raised
 
 ```java
 package in.naresh;
@@ -60,6 +60,30 @@ public class RuntimeException extends Exception
 * IF YOU ARE GOING TO GET EXCEPTIONS which extends RuntimeException ( Compiler will not force you to add try/catch or declare exception )
 
 
+##### Exception 2: Checked Exception
+```
+package in.naresh;
+
+public class TestException {
+
+	public static void main(String[] args) {
+		
+		
+		//Exceptions which extend Exception class are called checked Exceptions
+		//Compiler will force to handle the exception 
+		//ClassNotFoundException extends... Exception
+		
+		try {
+			Class.forName("com.postgresql.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
+```
+![Uploading exception.png…]()
 
 
 
