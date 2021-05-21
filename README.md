@@ -1,5 +1,8 @@
 #  Exceptions Demo
 
+![exception-hierarchy-in-java](https://user-images.githubusercontent.com/2763774/119129831-0e4f5a00-ba55-11eb-9fcf-12313a84fd89.png)
+
+
 ##### Without Exception
 ```java
 package in.naresh;
