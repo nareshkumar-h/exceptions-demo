@@ -50,7 +50,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "f
 ```
 
 ###### Explain NumberFormatException
-```
+```java
 public class NumberFormatException extends IllegalArgumentException { }
 public class IllegalArgumentException extends RuntimeException {}
 public class RuntimeException extends Exception
@@ -61,7 +61,7 @@ public class RuntimeException extends Exception
 
 
 ##### Exception 2: Checked Exception
-```
+```java
 package in.naresh;
 
 public class TestException {
@@ -87,3 +87,29 @@ public class TestException {
 
 
 
+##### Runtime Exception 2:
+
+```java
+package in.naresh;
+
+public class TestDivision {
+
+	public static void main(String[] args) {
+		
+		
+		int a  = 10;
+		int b = 0;
+		
+		int c  = a/b;
+		System.out.println(c);
+	}
+	//java.lang.ArithmeticException extends RuntimeException
+}
+
+```
+
+```
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at in.naresh.TestDivision.main(TestDivision.java:11)
+
+```
