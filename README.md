@@ -183,5 +183,4 @@ public class GradeValidator {
 <img width="551" alt="validation_exception" src="https://user-images.githubusercontent.com/2763774/119129240-486c2c00-ba54-11eb-9a31-1a00f88867db.png">
 
 ```
-```
 ![Uploading validation_exception2.png…]()
