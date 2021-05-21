@@ -113,3 +113,37 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at in.naresh.TestDivision.main(TestDivision.java:11)
 
 ```
+
+#### Exception 3:
+```java
+package in.naresh;
+
+public class TestDivision {
+
+	public static void main(String[] args) {
+		
+		
+		int percentage = 0;
+		try {
+			int totalMarks  = 10;
+			int noOfSubjects = 0;
+			
+			percentage = totalMarks/noOfSubjects;
+			System.out.println(percentage);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		if(percentage > 80) {
+			System.out.println("Grade A");
+		}
+		else {
+			System.out.println("Grade B");
+		}
+		
+	}
+	//java.lang.ArithmeticException extends RuntimeException
+}
+
+```
